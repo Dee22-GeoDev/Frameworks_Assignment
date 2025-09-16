@@ -1,113 +1,127 @@
-📊 CORD-19 Data Exploration & Streamlit App
-📘 Assignment Overview
+📊 CORD-19 Data Explorer
 
-This assignment demonstrates a basic data analysis workflow using the CORD-19 research dataset
-.
-It covers loading, cleaning, analyzing, and visualizing research paper metadata, and concludes with building a simple Streamlit application to display the findings.
+An interactive data exploration project built with Python, pandas, and Streamlit, using the CORD-19 metadata dataset.
+The goal is to practice fundamental data analysis, visualization, and web app development skills.
 
-The goal is to practice fundamental data analysis and presentation skills appropriate for beginners.
+📌 Project Overview
 
-🎯 Learning Objectives
+This project walks through the full workflow of working with a real-world dataset:
 
-By completing this assignment, you will:
+Data Loading and Exploration
 
-✅ Load and explore a real-world dataset
+Load metadata.csv from the CORD-19 dataset
 
-✅ Apply basic data cleaning techniques
+Explore data structure, missing values, and column types
 
-✅ Create meaningful visualizations
+Data Cleaning and Preparation
 
-✅ Build a simple interactive web application
+Handle missing values
 
-✅ Present insights clearly and effectively
+Convert publication dates to datetime
+
+Create new columns (e.g., year, abstract word count)
+
+Data Analysis and Visualization
+
+Count papers by year
+
+Identify top publishing journals
+
+Plot publication trends and journal contributions
+
+Interactive Streamlit App
+
+A slider to filter publications by year
+
+A table preview of selected research papers
+
+Bar chart showing number of publications per year
+
+Documentation and Reflection
+
+Code is fully commented for clarity
+
+Includes a short reflection on challenges and learning outcomes
 
 📂 Dataset Information
 
-We use the metadata.csv file from the CORD-19 dataset, which contains information on COVID-19 research papers, including:
+The project uses the CORD-19 metadata.csv file, which includes:
 
-📝 Paper titles and abstracts
+Research paper titles and abstracts
 
-📅 Publication dates
+Publication dates
 
-👨‍🔬 Authors and journals
+Authors and journals
 
-🌐 Source information
+Source information
 
+📥 Dataset can be downloaded from Kaggle:
+👉 CORD-19 Research Challenge
 
-Dataset link: CORD-19 Research Challenge (Kaggle)
-
-🛠️ Required Tools
-
-Make sure you have the following installed:
+🛠️ Tools & Libraries
 
 Python 3.7+
 
 pandas
- → Data manipulation
+ – data manipulation
 
 matplotlib
- / seaborn
- → Visualization
+ – visualization
 
 Streamlit
- → Web application framework
+ – interactive web app
 
-Jupyter Notebook
- (optional) → Interactive exploration
+(Optional) Jupyter Notebook – exploration and documentation
 
-Installation
-pip install pandas matplotlib seaborn streamlit
+🚀 Installation & Setup
 
-🚀 Project Structure
-Frameworks_Assignment/
-│
-├── notebooks/
-│   └── analysis.ipynb       # Data loading, cleaning, exploration, visualization
-│
-├── app.py                   # Streamlit application
-├── metadata.csv             # Dataset (or sample metadata file)
-├── README.md                # Project documentation
-└── requirements.txt         # Python dependencies
+Clone this repository or download the project files.
 
-📊 Features Implemented
+Install dependencies:
 
-Load and explore dataset using Pandas
+pip install pandas matplotlib streamlit
 
-Handle missing data and prepare new features
 
-Generate visualizations:
-
-Publications by year
-
-Top publishing journals
-
-Word frequency in titles
-
-Word cloud of paper titles
-
-Interactive Streamlit app:
-
-Year range filter
-
-Publication trend plot
-
-Top journals bar chart
-
-Sample data preview
-
-▶️ Running the Project
-1. Jupyter Notebook
-
-Open and run the notebook:
-
-jupyter notebook notebooks/analysis.ipynb
-
-2. Streamlit Application
-
-Run the app from the project root:
+Run the Streamlit app:
 
 streamlit run app.py
 
 
-Then open the link provided (default: http://localhost:8501
-) in your browser.
+Open the app in your browser at http://localhost:8501
+.
+
+📊 Example Outputs
+
+Publications Over Time – bar chart showing research activity by year
+
+Top Journals – which journals published the most COVID-19 research
+
+Interactive Filtering – explore specific year ranges with a slider
+
+📝 Reflection
+
+During this project I learned how to:
+
+Work with a real-world dataset and handle missing values
+
+Perform basic data cleaning and transformations
+
+Generate insightful visualizations of publication trends
+
+Build an interactive web app with Streamlit
+
+Document and reflect on my workflow for clarity and reproducibility
+
+Challenges included handling the large dataset size, cleaning incomplete data, and running Streamlit inside a Jupyter environment.
+
+📌 Evaluation Criteria
+
+✅ Complete implementation (data loading, cleaning, analysis, Streamlit app)
+
+✅ Clear and well-commented code
+
+✅ Appropriate visualizations
+
+✅ Functional and interactive Streamlit application
+
+✨ Built with Python & Streamlit to explore the global COVID-19 research effort.
