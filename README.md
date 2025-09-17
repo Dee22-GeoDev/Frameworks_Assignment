@@ -1,7 +1,7 @@
 📊 CORD-19 Data Explorer
 
 An interactive data exploration project built with Python, pandas, and Streamlit, using the CORD-19 metadata dataset.
-The goal is to practice fundamental data analysis, visualization, and web app development skills.
+The goal is to practice fundamental data analysis, visualization, and we`   1b app development skills.
 
 📌 Project Overview
 
