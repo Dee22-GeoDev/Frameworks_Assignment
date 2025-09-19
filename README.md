@@ -75,7 +75,6 @@ Run the app:
 
 streamlit run app.py
 
-
 Open in your browser: http://localhost:8501
 
 📊 Example Outputs
